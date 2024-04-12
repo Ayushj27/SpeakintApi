@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Post from './components/Post';
+import Get from './components/Get';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/get",
-    element: <App/>,
+    element: <Get/>,
   }
 ]);
 

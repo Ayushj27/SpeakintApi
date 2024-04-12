@@ -3,10 +3,10 @@ import React from 'react'
 const Navbar = () => {
   return (
     <>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg" style={{backgroundColor : '#e3f1ff'}}>
   <div className="container-fluid">
-    <a className="navbar-brand" href="/get">
-      Speakint Playground
+    <a className="navbar-brand" href="/post" style={{color : '#003372', fontWeight : 'bold'}}>
+      Speakint Api
     </a>
     <button
       className="navbar-toggler"
@@ -21,16 +21,17 @@ const Navbar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/get">
-            GET
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/post">
+      <li className="nav-item">
+          <a className="nav-link" href="/post" style={{color : '#003372'}}>
             POST
           </a>
         </li>
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="/get" style={{color : '#003372'}}>
+            GET
+          </a>
+        </li>
+        
        
         
       </ul>
